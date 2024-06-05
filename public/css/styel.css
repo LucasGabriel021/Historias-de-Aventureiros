@@ -1,0 +1,37 @@
+:root {
+     --verde-primario: #65B741;
+     --verde-secundario: #C0FF96;
+     --verde-escuro: #005100;
+     --branco-bg: #f1f1f1;
+     --preto: #3A3C39;
+     --cinza-card: #D7D7D7;
+ }
+
+@font-face {
+     font-family: "Cabin-Regular";
+     src: url(../fonts/Cabin-Regular.ttf) format('truetype');
+}
+
+@font-face {
+     font-family: "Rubik-Bold";
+     src: url(../fonts/Rubik-Bold.ttf) format('truetype');
+}
+
+body {
+     font-family: "Cabin-Regular", sans-serif;
+}
+
+header {
+     background: url(../images/banner-cahapada.jpg) center no-repeat;
+     background-size: cover;
+     width: 100%;
+     height: 500px;
+}
+
+h1, .subtitulo {
+     font-family: "Rubik-Bold", sans-serif;
+}
+
+.conteudo {
+     max-width: 1440px;
+}

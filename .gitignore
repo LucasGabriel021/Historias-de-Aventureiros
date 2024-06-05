@@ -1,0 +1,30 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs/
+*.log
+logs/*.log
+
+# Diretórios de build
+dist/
+build/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# IDEs e editores de texto
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Ambiente específico
+.env
+
+# Live Server
+public/live-server.log
