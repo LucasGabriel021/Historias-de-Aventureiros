@@ -49,27 +49,27 @@
           <div class="conteudo mx-auto">
                <div class="w-full flex justify-between p-8">
                     <div>
-                         <img src="/images/logo.png" alt="Histórias de Viajantes" class="w-14 h-14">
+                         <img src="/images/logo.png" alt="Histórias de Viajantes" class="w-10 h-10 md:w-14 md:h-14">
                     </div>
                     <div>
-                         <button class="px-6 py-2 text-branco-bg text-md font-medium border-b-2 rounded-sm border-transparent hover:text-verde-primario">Entrar</button>
+                         <button class="hidden md:inline px-6 py-2 text-branco-bg text-md font-medium border-b-2 rounded-sm border-transparent hover:text-verde-primario">Entrar</button>
                          <button class="px-6 py-2 bg-verde-primario text-branco-bg text-md font-medium rounded-3xl hover:bg-verde-secundario hover:text-verde-escuro transition-all">Criar conta</button>
                     </div>
                </div>
                <div class="w-full h-full flex flex-column items-center p-8">
                     <div>
-                         <h1 class="text-white text-4xl text-center">Histórias de Aventureiros</h1>
-                         <h2 class="subtitulo text-white text-lg text-center mt-1">Explore trilhas a pé, de bicicleta ou adaptadas às suas necessidades.</h2>
+                         <h1 class="text-white text-2xl md:text-4xl text-center">Histórias de Aventureiros</h1>
+                         <h2 class="subtitulo text-white text-sm md:text-lg text-center mt-1">Explore trilhas a pé, de bicicleta ou adaptadas às suas necessidades.</h2>
                     </div>
-                    <div class="relative mt-2 w-3/4 bg-branco-bg flex justify-between items-center gap-x-8 h-12 rounded-lg pl-8 pr-3">
+                    <div class="relative mt-2 w-3/4 bg-branco-bg flex justify-between items-center gap-x-8 h-10 md:h-12 rounded-lg pl-8 pr-3">
                          <div class="inset-y-0 left-0 flex items-center">
-                              <select class="cursor-pointer bg-branco-bg text-verde-primario h-full py-2 pl-3 pr-8 rounded-l-lg leading-tight focus:outline-none">
+                              <select class="cursor-pointer bg-branco-bg text-sm md:text-md text-verde-primario h-full py-2 pl-3 pr-8 rounded-l-lg leading-tight focus:outline-none">
                                   <option value="Trilhas" class="cursor-pointer text-preto">Trilhas</option>
                                   <option value="Eventos" class="cursor-pointer text-preto">Eventos</option>
                                   <option value="Eventos" class="cursor-pointer text-preto">Grupos</option>
                               </select>
                           </div>
-                         <input type="text" id="buscaPrincipal" name="buscaPrincipal" autocomplete="off" placeholder="Chapada dos Veadeiros" class="border-l-2 px-4 w-full bg-branco-bg text-md h-full outline-0">
+                         <input type="text" id="buscaPrincipal" name="buscaPrincipal" autocomplete="off" placeholder="Chapada dos Veadeiros" class="border-l-2 px-4 w-full bg-branco-bg text-sm md:text-md h-full outline-0">
                          <button class="p-2 bg-verde-primario text-white text-sm rounded-lg w-8 h-8 flex justify-center items-center">
                               <i class="fa-solid fa-magnifying-glass"></i>
                          </button>
@@ -80,20 +80,20 @@
      <main>
           <section id="sectcionObjetivos" class="p-8">
                <div class="conteudo mx-auto">
-                    <h2 class="text-preto text-2xl text-center font-bold">Por que escolher o História de Aventureiros?</h2>
-                    <div class="mt-4 flex justify-between gap-x-2">
-                         <div class="flex flex-column items-center gap-y-2">
-                              <img src="/images/icone-adaptado.png" alt="Icone" class="w-24 h-24">
+                    <h2 class="text-preto text-xl text-center font-bold">Por que escolher o História de Aventureiros?</h2>
+                    <div class="mt-4 flex flex-col md:flex-row md:justify-between items-center gap-y-6 md:gap-x-2">
+                         <div class="flex flex-column items-center gap-y-2 w-3/4 md:w-full">
+                              <img src="/images/icone-adaptado.png" alt="Icone" class="w-20 h-20 md:w-24 md:h-24">
                               <h3 class="text-lg text-preto font-medium">Descubra trilhas adaptadas</h3>
                               <p class="text-md text-preto text-center font-normal">É um fato estabelecido há muito tempo que um leitor se distrairá com o conteúdo legível de uma página ao observar seu layout.</p>
                          </div>
-                         <div class="flex flex-column items-center gap-y-2">
-                              <img src="/images/icone-infos-att.png" alt="Icone" class="w-24 h-24">
+                         <div class="flex flex-column items-center gap-y-2 w-3/4 md:w-full">
+                              <img src="/images/icone-infos-att.png" alt="Icone" class="w-20 h-20 md:w-24 md:h-24">
                               <h3 class="text-lg text-preto font-medium">Tenha informações atualizadas</h3>
                               <p class="text-md text-preto text-center font-normal">É um fato estabelecido há muito tempo que um leitor se distrairá com o conteúdo legível de uma página ao observar seu layout.</p>
                          </div>
-                         <div class="flex flex-column items-center gap-y-2">
-                              <img src="/images/icone-amizade.png" alt="Icone" class="w-24 h-24">
+                         <div class="flex flex-column items-center gap-y-2 w-3/4 md:w-full">
+                              <img src="/images/icone-amizade.png" alt="Icone" class="w-20 h-20 md:w-24 md:h-24">
                               <h3 class="text-lg text-preto font-medium">Faça amizades</h3>
                               <p class="text-md text-preto text-center font-normal">É um fato estabelecido há muito tempo que um leitor se distrairá com o conteúdo legível de uma página ao observar seu layout.</p>
                          </div>
@@ -102,13 +102,13 @@
           </section>
           <section id="sectcionRecomendacoes" class="p-8">
                <div class="conteudo mx-auto">
-                     <h2 class="text-preto text-2xl text-center font-bold">Escolhas preferidas dos nossos usuários</h2>
-                     <div class="mt-4 flex justify-center gap-x-4">
-                         <div class="w-72 h-96 bg-branco-bg rounded-xl p-4 flex flex-column items-center">
+                     <h2 class="text-preto text-xl md:text-2xl text-center font-bold">Escolhas preferidas dos nossos usuários</h2>
+                     <div class="mt-4 flex flex-col md:flex-row md:justify-center items-center gap-y-6 md:gap-x-4">
+                         <div class="w-full md:w-72 h-96 bg-branco-bg rounded-xl p-4 flex flex-col items-center">
                               <div style="background: url(/images/img-card.png) center no-repeat; background-size: cover;" class="w-full h-full rounded-xl px-4 py-2">
                                    <div class="w-full flex justify-between items-center text-sm">
-                                        <span class="bg-preto py-1 px-2 rounded-xl text-branco-bg">Trilha</span>
-                                        <div class="bg-preto py-1 px-2 rounded-xl text-branco-bg flex items-center gap-x-1">
+                                        <span class="bg-preto py-1 px-2 rounded-xl text-branco-bg text-lg md:text-md">Trilha</span>
+                                        <div class="bg-preto py-1 px-2 rounded-xl text-branco-bg flex items-center gap-x-1 text-lg md:text-md">
                                              <span>4.57</span>
                                              <i class="fa-solid fa-star text-xs"></i>
                                         </div>
@@ -131,11 +131,11 @@
                                    </div>
                               </div>
                          </div>
-                         <div class="w-72 h-96 bg-branco-bg rounded-xl p-4 flex flex-column items-center">
+                         <div class="w-full md:w-72 h-96 bg-branco-bg rounded-xl p-4 flex flex-col items-center">
                               <div style="background: url(/images/img-card.png) center no-repeat; background-size: cover;" class="w-full h-full rounded-xl px-4 py-2">
                                    <div class="w-full flex justify-between items-center text-sm">
-                                        <span class="bg-preto py-1 px-2 rounded-xl text-branco-bg">Trilha</span>
-                                        <div class="bg-preto py-1 px-2 rounded-xl text-branco-bg flex items-center gap-x-1">
+                                        <span class="bg-preto py-1 px-2 rounded-xl text-branco-bg text-lg md:text-md">Trilha</span>
+                                        <div class="bg-preto py-1 px-2 rounded-xl text-branco-bg flex items-center gap-x-1 text-lg md:text-md">
                                              <span>4.57</span>
                                              <i class="fa-solid fa-star text-xs"></i>
                                         </div>
@@ -158,11 +158,11 @@
                                    </div>
                               </div>
                          </div>
-                         <div class="w-72 h-96 bg-branco-bg rounded-xl p-4 flex flex-column items-center">
+                         <div class="w-full md:w-72 h-96 bg-branco-bg rounded-xl p-4 flex flex-col items-center">
                               <div style="background: url(/images/img-card.png) center no-repeat; background-size: cover;" class="w-full h-full rounded-xl px-4 py-2">
                                    <div class="w-full flex justify-between items-center text-sm">
-                                        <span class="bg-preto py-1 px-2 rounded-xl text-branco-bg">Trilha</span>
-                                        <div class="bg-preto py-1 px-2 rounded-xl text-branco-bg flex items-center gap-x-1">
+                                        <span class="bg-preto py-1 px-2 rounded-xl text-branco-bg text-lg md:text-md">Trilha</span>
+                                        <div class="bg-preto py-1 px-2 rounded-xl text-branco-bg flex items-center gap-x-1 text-lg md:text-md">
                                              <span>4.57</span>
                                              <i class="fa-solid fa-star text-xs"></i>
                                         </div>
@@ -185,11 +185,11 @@
                                    </div>
                               </div>
                          </div>
-                         <div class="w-72 h-96 bg-branco-bg rounded-xl p-4 flex flex-column items-center">
+                         <div class="w-full md:w-72 h-96 bg-branco-bg rounded-xl p-4 flex flex-column items-center">
                               <div style="background: url(/images/img-card.png) center no-repeat; background-size: cover;" class="w-full h-full rounded-xl px-4 py-2">
                                    <div class="w-full flex justify-between items-center text-sm">
-                                        <span class="bg-preto py-1 px-2 rounded-xl text-branco-bg">Trilha</span>
-                                        <div class="bg-preto py-1 px-2 rounded-xl text-branco-bg flex items-center gap-x-1">
+                                        <span class="bg-preto py-1 px-2 rounded-xl text-branco-bg text-lg md:text-md">Trilha</span>
+                                        <div class="bg-preto py-1 px-2 rounded-xl text-branco-bg flex items-center gap-x-1 text-lg md:text-md">
                                              <span>4.57</span>
                                              <i class="fa-solid fa-star text-xs"></i>
                                         </div>
@@ -217,35 +217,35 @@
           </section>
           <section id="sectcionDestinos" class="p-8">
                <div class="conteudo mx-auto">
-                    <h2 class="text-preto text-2xl text-center font-bold">Escolhas preferidas dos nossos usuários</h2>
-                    <div class="mt-2 flex justify-center gap-x-4">
-                         <div style="background: url(/images/img-rec.png) center no-repeat; background-size: cover;" class="flex flex-column justify-between mt-2 rounded-md p-8 w-96 h-80">
+                    <h2 class="text-preto text-xl md:text-2xl text-center font-bold">Escolhas preferidas dos nossos usuários</h2>
+                    <div class="mt-2 flex flex-col md:flex-row md:justify-center items-center gap-y-6 md:gap-x-4">
+                         <div style="background: url(/images/img-rec.png) center no-repeat; background-size: cover;" class="flex flex-column justify-between mt-2 rounded-md p-8 w-full md:w-96 h-80">
                               <div>
                                    <h2 class="text-branco-bg text-xl">Descubra trilhas na<br>Chapada dos Veadeiros</h2>
                                    <p class="mt-2 text-branco-bg text-sm">É um fato estabelecido há muito tempo que um leitor se distrairá com o conteúdo legível de uma página ao observar seu layout.</p>
                               </div>
-                              <button class="px-6 py-2 bg-verde-primario text-branco-bg text-md font-medium rounded-3xl hover:bg-verde-secundario hover:text-verde-escuro transition-all flex items-center gap-x-2 w-fit">Veja mais <i class="fa-solid fa-arrow-right"></i></button>
+                              <button class="px-6 py-2 bg-verde-primario text-branco-bg text-md font-medium rounded-3xl hover:bg-verde-secundario hover:text-verde-escuro transition-all flex items-center gap-x-2 w-full md:w-fit flex justify-center md:block">Veja mais <i class="fa-solid fa-arrow-right"></i></button>
                          </div>
-                         <div style="background: url(/images/img-rec2.png) center no-repeat; background-size: cover;" class="flex flex-column justify-between mt-2 rounded-md p-8 w-96 h-80">
+                         <div style="background: url(/images/img-rec2.png) center no-repeat; background-size: cover;" class="flex flex-column justify-between mt-2 rounded-md p-8 w-full md:w-96 h-80">
                               <div>
                                    <h2 class="text-branco-bg text-xl">Descubra trilhas em<br>Cavalcante</h2>
                                    <p class="mt-2 text-branco-bg text-sm">É um fato estabelecido há muito tempo que um leitor se distrairá com o conteúdo legível de uma página ao observar seu layout.</p>
                               </div>
-                              <button class="px-6 py-2 bg-verde-primario text-branco-bg text-md font-medium rounded-3xl hover:bg-verde-secundario hover:text-verde-escuro transition-all flex items-center gap-x-2 w-fit">Veja mais <i class="fa-solid fa-arrow-right"></i></button>
+                              <button class="px-6 py-2 bg-verde-primario text-branco-bg text-md font-medium rounded-3xl hover:bg-verde-secundario hover:text-verde-escuro transition-all flex items-center gap-x-2 w-full md:w-fit flex justify-center md:block">Veja mais <i class="fa-solid fa-arrow-right"></i></button>
                          </div>
-                         <div style="background: url(/images/img-rec3.png) center no-repeat; background-size: cover;" class="flex flex-column justify-between mt-2 rounded-md p-8 w-96 h-80">
+                         <div style="background: url(/images/img-rec3.png) center no-repeat; background-size: cover;" class="flex flex-column justify-between mt-2 rounded-md p-8 w-full md:w-96 h-80">
                               <div>
                                    <h2 class="text-branco-bg text-xl">Descubra trilhas no<br>Distrito Federal</h2>
                                    <p class="mt-2 text-branco-bg text-sm">É um fato estabelecido há muito tempo que um leitor se distrairá com o conteúdo legível de uma página ao observar seu layout.</p>
                               </div>
-                              <button class="px-6 py-2 bg-verde-primario text-branco-bg text-md font-medium rounded-3xl hover:bg-verde-secundario hover:text-verde-escuro transition-all flex items-center gap-x-2 w-fit">Veja mais <i class="fa-solid fa-arrow-right"></i></button>
+                              <button class="px-6 py-2 bg-verde-primario text-branco-bg text-md font-medium rounded-3xl hover:bg-verde-secundario hover:text-verde-escuro transition-all flex items-center gap-x-2 w-full md:w-fit flex justify-center md:block">Veja mais <i class="fa-solid fa-arrow-right"></i></button>
                          </div>
                     </div>
                </div>
           </section>
      </main>
-     <footer class="bg-verde-primario h-44 w-full flex justify-between items-center p-8">
-          <div class="conteudo mx-auto w-full flex justify-between items-center">
+     <footer class="bg-verde-primario h-auto md:h-44 w-full flex justify-between items-center p-8">
+          <div class="conteudo mx-auto w-full flex flex-col-reverse md:flex-row gap-y-6 md:gap-y-0 justify-between items-center">
                <div>
                     <img src="/images/logo-grande.png" alt="Histórias de Aventureiros" class="w-56">
                </div>
