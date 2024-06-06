@@ -3,11 +3,13 @@ const app = express();
 const path = require("path");
 
 // Config do template engine
-app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "views"));
+// Configuração do diretório de views e motor de template
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'html');
+app.engine('html', require('ejs').renderFile);
 
-// Middleware para servir arquivos estaticos
-app.use(express.static(path.join(__dirname, "public")));
+// Configuração para servir arquivos estáticos
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Rotas
 const indexRouter = require("./routes/index");
