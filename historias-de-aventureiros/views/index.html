@@ -10,11 +10,14 @@
      <!-- CDN jQuery -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-     <!-- Latest compiled and minified CSS - Bootrstap -->
+     <!-- Latest compiled and minified CSS - Bootstrap -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-     <!-- Latest compiled JavaScript - Bootrstap -->
+     <!-- Latest compiled JavaScript - Bootstrap -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+     <!-- CDN Icons Bootstrap -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
      <!-- CDN Tailwind -->
      <script src="https://cdn.tailwindcss.com"></script>
@@ -28,6 +31,7 @@
                           "verde-primario": "#65B741",
                           "verde-secundario": "#C0FF96",
                           "verde-escuro": "#005100",
+                          "verde-claro": "#8aec60",
                           "branco-bg": "#F1F1F1",
                           "preto": "#3A3C39",
                           "cinza-card": "#D7D7D7"
@@ -44,12 +48,12 @@
       <link rel="stylesheet" href="/css/styel.css">
 </head>
 
-<body>
+<body class="relative">
      <header>
           <div class="conteudo mx-auto">
                <div class="w-full flex justify-between p-8">
                     <a href="/">
-                         <img src="/images/logo.png" alt="Histórias de Viajantes" class="w-10 h-10 md:w-14 md:h-14">
+                         <img src="/images/logo.png" alt="Projeto Histórias de Viajantes" class="w-10 h-10 md:w-14 md:h-14">
                     </a>
                     <div class="btns-login">
                          <a href="/login" class="hidden md:inline px-6 py-2 text-branco-bg text-md font-medium border-b-2 rounded-sm border-transparent hover:text-verde-primario" data-login="Entrar">Entrar</a>
@@ -83,17 +87,17 @@
                     <h2 class="text-preto text-xl text-center font-bold">Por que escolher o História de Aventureiros?</h2>
                     <div class="mt-4 flex flex-col md:flex-row md:justify-between items-center gap-y-6 md:gap-x-2">
                          <div class="flex flex-column items-center gap-y-2 w-3/4 md:w-full">
-                              <img src="/images/icone-adaptado.png" alt="Icone" class="w-20 h-20 md:w-24 md:h-24">
+                              <img src="/images/icone-adaptado.png" alt="Descubra trilhas adaptadas pelo Distrito Federal" class="w-20 h-20 md:w-24 md:h-24">
                               <h3 class="text-lg text-preto font-medium">Descubra trilhas adaptadas</h3>
                               <p class="text-md text-preto text-center font-normal">É um fato estabelecido há muito tempo que um leitor se distrairá com o conteúdo legível de uma página ao observar seu layout.</p>
                          </div>
                          <div class="flex flex-column items-center gap-y-2 w-3/4 md:w-full">
-                              <img src="/images/icone-infos-att.png" alt="Icone" class="w-20 h-20 md:w-24 md:h-24">
+                              <img src="/images/icone-infos-att.png" alt="Informações atualizadas pelas trilhas" class="w-20 h-20 md:w-24 md:h-24">
                               <h3 class="text-lg text-preto font-medium">Tenha informações atualizadas</h3>
                               <p class="text-md text-preto text-center font-normal">É um fato estabelecido há muito tempo que um leitor se distrairá com o conteúdo legível de uma página ao observar seu layout.</p>
                          </div>
                          <div class="flex flex-column items-center gap-y-2 w-3/4 md:w-full">
-                              <img src="/images/icone-amizade.png" alt="Icone" class="w-20 h-20 md:w-24 md:h-24">
+                              <img src="/images/icone-amizade.png" alt="Descubra novas amizades ao fazer trilhas" class="w-20 h-20 md:w-24 md:h-24">
                               <h3 class="text-lg text-preto font-medium">Faça amizades</h3>
                               <p class="text-md text-preto text-center font-normal">É um fato estabelecido há muito tempo que um leitor se distrairá com o conteúdo legível de uma página ao observar seu layout.</p>
                          </div>
@@ -244,6 +248,24 @@
                </div>
           </section>
      </main>
+     <div class="fixed bottom-8 left-0 px-8 flex items-center gap-x-2">
+          <button id="btnAcessibilidade" class="bg-verde-primario text-white text-3xl font-bold h-14 w-14 rounded-full shadow-lg hover:bg-verde-escuro">
+               <i class="bi bi-universal-access-circle"></i>          
+          </button>
+          <div id="options" class="flex items-center pag-x-2 hidden h-14">
+               <button class="option-button bg-verde-claro text-white text-xl font-bold h-10 w-10 flex justify-center items-center rounded-full shadow-lg hover:bg-verde-escuro mr-2">
+                    <img src="/images/icone-aumentar.svg" alt="Botão de diminuir fonte" class="w-4 h-auto">
+                </button>
+                <button class="option-button bg-verde-claro text-white text-xl font-bold h-10 w-10 flex justify-center items-center rounded-full shadow-lg hover:bg-verde-escuro">
+                    <img src="/images/icone-diminuir.svg" alt="Botão de diminuir fonte" class="w-4 h-auto">
+                </button>
+          </div>
+     </div>
+     <div class="fixed bottom-8 right-0 px-8 w-auto flex flex-col gap-y-2 items-end">
+          <button id="btnScroll" class="text-branco-bg text-2xl w-14 h-14 rounded-full bg-verde-claro flex justify-center items-center cursor-pointer transition-all hover:bg-verde-primario">
+               <i class="fa-solid fa-arrow-up"></i>
+          </button>
+     </div>
      <footer class="bg-verde-primario h-auto md:h-44 w-full flex justify-between items-center p-8">
           <div class="conteudo mx-auto w-full flex flex-col-reverse md:flex-row gap-y-6 md:gap-y-0 justify-between items-center">
                <div>
@@ -263,6 +285,8 @@
                </div>
           </div>
      </footer>
+
+     <script src="/js/componentes.js"></script>
 </body>
 
 </html>
