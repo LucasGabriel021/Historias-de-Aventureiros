@@ -13,7 +13,10 @@
   "description": "",
   "dependencies": {
     "ejs": "^3.1.10",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "i18next": "^23.11.5",
+    "i18next-browser-languagedetector": "^8.0.0",
+    "i18next-http-backend": "^2.5.2"
   },
   "devDependencies": {
     "live-server": "^1.2.2",

@@ -134,11 +134,21 @@
                <i class="bi bi-universal-access-circle"></i>          
           </button>
           <div id="options" class="flex items-center pag-x-2 hidden h-14">
-               <button id="btnAumentarFonte" class="option-button bg-verde-claro text-white text-xl font-bold h-10 w-10 flex justify-center items-center rounded-full shadow-lg hover:bg-verde-escuro mr-2">
+               <button id="btnAumentarFonte" title="Aumentar fonte do sistema" class="option-button bg-verde-claro text-white text-xl font-bold h-10 w-10 flex justify-center items-center rounded-full shadow-lg hover:bg-verde-escuro mr-2">
                     <img src="/images/icone-aumentar.svg" alt="Botão de diminuir fonte" class="w-4 h-auto">
                 </button>
-                <button id="btnDiminuirFonte" class="option-button bg-verde-claro text-white text-xl font-bold h-10 w-10 flex justify-center items-center rounded-full shadow-lg hover:bg-verde-escuro">
+                <button id="btnDiminuirFonte" title="Diminuir fonte do sistema" class="option-button bg-verde-claro text-white text-xl font-bold h-10 w-10 flex justify-center items-center rounded-full shadow-lg hover:bg-verde-escuro mr-2">
                     <img src="/images/icone-diminuir.svg" alt="Botão de diminuir fonte" class="w-4 h-auto">
+                </button>
+                <button id="btnDiminuirFonte" title="Alterar para o modo daltonimso" class="option-button bg-verde-claro font-bold h-10 w-10 flex justify-center items-center rounded-full shadow-lg hover:bg-verde-escuro mr-2">
+                    <span class="text-md text-branco-bg"><i class="fa-solid fa-eye"></i></span>
+                </button>
+                <button id="selecIdioma" title="Alterar idioma do sistema" class="option-button bg-verde-claro font-bold h-10 w-fit px-2 flex justify-center items-center rounded-full shadow-lg hover:bg-verde-escuro">
+                    <select name="selecIdioma" id="selectIdioma" class="bg-transparent text-white font-medium">
+                         <option value="pt" class="text-preto">Português</option>
+                         <option value="en" class="text-preto">English</option>
+                         <option value="es" class="text-preto">Español</option>
+                    </select>
                 </button>
           </div>
      </div>

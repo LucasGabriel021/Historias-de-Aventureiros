@@ -38,7 +38,7 @@ $(document).ready(function () {
           });
      });
 
-     filtro.each(function(i) {
+     filtros.each(function(i) {
           $(this).click(function() {
               filtros.eq(i).slideToggle();
               seta.eq(i).toggleClass("rotate-180");
