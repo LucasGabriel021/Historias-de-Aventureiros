@@ -4,7 +4,7 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Página Incial | Histórias de Aventureiros</title>
+     <title>Resultados da busca | Histórias de Aventureiros</title>
      <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
 
      <!-- CDN jQuery -->
@@ -49,40 +49,38 @@
 </head>
 
 <body class="relative">
-     <header>
+     <header class="border-b-2 border-cinza-card">
           <div class="conteudo mx-auto">
-               <div class="w-full flex justify-between p-8">
+               <div class="w-full flex justify-between items-center p-8 bg-branco-bg">
                     <a href="/">
-                         <img src="/images/logo.png" alt="Projeto Histórias de Viajantes" class="w-10 h-10 md:w-14 md:h-14">
+                         <img src="/images/logo02.png" alt="Projeto Histórias de Viajantes" class="w-10 h-10 md:w-14 md:h-14">
                     </a>
-                    <div class="btns-login">
-                         <a href="/login" class="hidden md:inline px-6 py-2 text-branco-bg text-md font-medium border-b-2 rounded-sm border-transparent hover:text-verde-primario" data-login="Entrar">Entrar</a>
+                    <div class="btns-login h-fit">
+                         <a href="/login" class="hidden md:inline px-6 py-2 text-verde-primario text-md font-medium border-b-2 rounded-sm border-transparent hover:text-verde-escuro" data-login="Entrar">Entrar</a>
                          <a href="/cadastro" class="px-6 py-2 bg-verde-primario text-branco-bg text-md font-medium rounded-3xl hover:bg-verde-secundario hover:text-verde-escuro transition-all" data-login="Cadastrar">Criar conta</a>
-                    </div>
-               </div>
-               <div class="w-full h-full flex flex-column items-center p-8">
-                    <div>
-                         <h1 class="text-white text-2xl md:text-4xl text-center">Histórias de Aventureiros</h1>
-                         <h2 class="subtitulo text-white text-sm md:text-lg text-center mt-1">Explore trilhas a pé, de bicicleta ou adaptadas às suas necessidades.</h2>
-                    </div>
-                    <div class="relative mt-2 w-3/4 bg-branco-bg flex justify-between items-center gap-x-8 h-10 md:h-12 rounded-lg pl-8 pr-3">
-                         <div class="inset-y-0 left-0 flex items-center">
-                              <select class="cursor-pointer bg-branco-bg text-sm md:text-md text-verde-primario h-full py-2 pl-3 pr-8 rounded-l-lg leading-tight focus:outline-none">
-                                  <option value="Trilhas" class="cursor-pointer text-preto">Trilhas</option>
-                                  <option value="Eventos" class="cursor-pointer text-preto">Eventos</option>
-                                  <option value="Eventos" class="cursor-pointer text-preto">Grupos</option>
-                              </select>
-                          </div>
-                         <input type="text" id="buscaPrincipal" name="buscaPrincipal" autocomplete="off" placeholder="Chapada dos Veadeiros" class="border-l-2 px-4 w-full bg-branco-bg text-sm md:text-md h-full outline-0">
-                         <button class="p-2 bg-verde-primario text-white text-sm rounded-lg w-8 h-8 flex justify-center items-center">
-                              <i class="fa-solid fa-magnifying-glass"></i>
-                         </button>
                     </div>
                </div>
           </div>
      </header>
      <main>
-          ...
+          <aside class="w-1/5 bg-branco-bg">
+               ...
+          </aside>
+          <div class="w-full h-full flex flex-column items-center p-8">
+               <div class="relative mt-2 w-3/4 bg-branco-bg flex justify-between items-center gap-x-8 h-10 md:h-12 rounded-lg pl-8 pr-3">
+                    <div class="inset-y-0 left-0 flex items-center">
+                         <select class="cursor-pointer bg-branco-bg text-sm md:text-md text-verde-primario h-full py-2 pl-3 pr-8 rounded-l-lg leading-tight focus:outline-none">
+                              <option value="Trilhas" class="cursor-pointer text-preto">Trilhas</option>
+                              <option value="Eventos" class="cursor-pointer text-preto">Eventos</option>
+                              <option value="Eventos" class="cursor-pointer text-preto">Grupos</option>
+                         </select>
+                         </div>
+                    <input type="text" id="buscaPrincipal" name="buscaPrincipal" autocomplete="off" placeholder="Chapada dos Veadeiros" class="border-l-2 px-4 w-full bg-branco-bg text-sm md:text-md h-full outline-0">
+                    <button class="p-2 bg-verde-primario text-white text-sm rounded-lg w-8 h-8 flex justify-center items-center">
+                         <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+               </div>
+          </div>
      </main>
      <footer class="bg-verde-primario h-auto md:h-44 w-full flex justify-between items-center p-8">
           <div class="conteudo mx-auto w-full flex flex-col gap-y-6 justify-between items-center">

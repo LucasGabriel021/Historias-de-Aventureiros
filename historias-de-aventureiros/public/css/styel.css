@@ -21,7 +21,7 @@ body {
      font-family: "Cabin-Regular", sans-serif;
 }
 
-header {
+#paginaIndex {
      background: url(../images/banner-cahapada.jpg) center no-repeat;
      background-size: cover;
      width: 100%;
