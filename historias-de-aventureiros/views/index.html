@@ -67,14 +67,14 @@
                     </div>
                     <div class="relative mt-2 w-3/4 bg-branco-bg flex justify-between items-center gap-x-8 h-10 md:h-12 rounded-lg pl-8 pr-3">
                          <div class="inset-y-0 left-0 flex items-center">
-                              <select class="cursor-pointer bg-branco-bg text-sm md:text-md text-verde-primario h-full py-2 pl-3 pr-8 rounded-l-lg leading-tight focus:outline-none">
+                              <select id="tipoPesquisa" name="tipoPesquisa" class="cursor-pointer bg-branco-bg text-sm md:text-md text-verde-primario h-full py-2 pl-3 pr-8 rounded-l-lg leading-tight focus:outline-none">
                                   <option value="Trilhas" class="cursor-pointer text-preto">Trilhas</option>
                                   <option value="Eventos" class="cursor-pointer text-preto">Eventos</option>
-                                  <option value="Eventos" class="cursor-pointer text-preto">Grupos</option>
+                                  <option value="Grupos" class="cursor-pointer text-preto">Grupos</option>
                               </select>
                           </div>
                          <input type="text" id="buscaPrincipal" name="buscaPrincipal" autocomplete="off" placeholder="Chapada dos Veadeiros" class="border-l-2 px-4 w-full bg-branco-bg text-sm md:text-md h-full outline-0">
-                         <button class="p-2 bg-verde-primario text-white text-sm rounded-lg w-8 h-8 flex justify-center items-center">
+                         <button id="btnPesquisa" class="p-2 bg-verde-primario text-white text-sm rounded-lg w-8 h-8 flex justify-center items-center">
                               <i class="fa-solid fa-magnifying-glass"></i>
                          </button>
                     </div>
@@ -271,6 +271,7 @@
 
      <script src="/js/componentes.js"></script>
      <script src="/js/acessibilidade.js"></script>
+     <script src="/js/pesquisa.js"></script>
 </body>
 
 </html>
