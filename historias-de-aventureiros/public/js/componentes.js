@@ -1,4 +1,4 @@
-console.log("Olá, mundo!");
+// console.log("Olá, mundo!");
 
 $(document).ready(function () {
      const btnScroll = $("#btnScroll");
@@ -26,4 +26,23 @@ $(document).ready(function () {
                options.removeClass("expanded").addClass("hidden");
           }
      });
+
+     const legendaFiltros = $(".legenda-filtros");
+     const filtros = $(".filtros");
+     const iconeSeta = $(".icone-seta");
+
+     legendaFiltros.each(function(i) {
+          $(this).click(function() {
+               filtros.eq(i).slideToggle();
+               iconeSeta.eq(i).toggleClass("rotate-180");
+          });
+     });
+
+     filtro.each(function(i) {
+          $(this).click(function() {
+              filtros.eq(i).slideToggle();
+              seta.eq(i).toggleClass("rotate-180");
+          });
+      });
+      
 });

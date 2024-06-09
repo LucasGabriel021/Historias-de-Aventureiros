@@ -33,6 +33,7 @@
                           "verde-escuro": "#005100",
                           "verde-claro": "#8aec60",
                           "branco-bg": "#F1F1F1",
+                          "branco-filtro": "#F9F9F9",
                           "preto": "#3A3C39",
                           "cinza-card": "#D7D7D7"
                       }
@@ -49,9 +50,9 @@
 </head>
 
 <body class="relative">
-     <header class="border-b-2 border-cinza-card">
+     <header class="border-b-2 bg-branco-filtro">
           <div class="conteudo mx-auto">
-               <div class="w-full flex justify-between items-center p-8 bg-branco-bg">
+               <div class="w-full flex justify-between items-center p-8">
                     <a href="/">
                          <img src="/images/logo02.png" alt="Projeto Histórias de Viajantes" class="w-10 h-10 md:w-14 md:h-14">
                     </a>
@@ -62,12 +63,58 @@
                </div>
           </div>
      </header>
-     <main>
-          <aside class="w-1/5 bg-branco-bg">
-               ...
+     <main class="flex">
+          <aside class="w-1/5 min-h-screen bg-branco-filtro p-8">
+               <h2 class="text-lg text-preto font-bold">Filtros</h2>
+               <div class="flex flex-col w-full">
+                    <div class="py-6 border-b-2 border-cinza-card">
+                         <div class="legenda-filtros flex justify-between text-md text-preto font-medium cursor-pointer"><span><i class="fa-solid fa-signal mr-2"></i>Dificuldade</span><span class="icone-seta"><i class="fa-solid fa-caret-down"></i></span></div>
+                         <div class="filtros hidden">
+                              <div class="mt-2 w-full flex flex-wrap gap-x-3">
+                                   <button class="py-2 px-4 bg-verde-primario text-white text-base rounded-xl shadow-xl">Fácil</button>
+                                   <button class="py-2 px-4 bg-branco-bg text-verde-primario text-base rounded-xl shadow-xl">Médio</button>
+                                   <button class="py-2 px-4 bg-branco-bg text-verde-primario text-base rounded-xl shadow-xl">Difícil</button>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="py-6 border-b-2 border-cinza-card">
+                         <div class="legenda-filtros flex justify-between text-md text-preto font-medium cursor-pointer"><span><i class="fa-solid fa-map mr-2"></i>Distância</span><span class="icone-seta"><i class="fa-solid fa-caret-down"></i></span></div>
+                         <div class="filtros hidden">
+                              <div class="mt-2 w-full flex flex-wrap gap-3">
+                                   <button class="py-2 px-4 bg-verde-primario text-white text-base rounded-xl shadow-xl">Menos...</button>
+                                   <button class="py-2 px-4 bg-branco-bg text-verde-primario text-base rounded-xl shadow-xl">5Km</button>
+                                   <button class="py-2 px-4 bg-branco-bg text-verde-primario text-base rounded-xl shadow-xl">10Km</button>
+                                   <button class="py-2 px-4 bg-branco-bg text-verde-primario text-base rounded-xl shadow-xl">14Km</button>
+                                   <button class="py-2 px-4 bg-branco-bg text-verde-primario text-base rounded-xl shadow-xl">Mais...</button>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="py-6 border-b-2 border-cinza-card">
+                         <div class="legenda-filtros flex justify-between text-md text-preto font-medium cursor-pointer"><span><i class="fa-solid fa-mountain mr-2"></i>Elevação</span><span class="icone-seta"><i class="fa-solid fa-caret-down"></i></span></div>
+                         <div class="filtros hidden">
+                              <div class="mt-2 w-full flex flex-wrap gap-3">
+                                   <button class="py-2 px-4 bg-verde-primario text-white text-base rounded-xl shadow-xl">Baixa</button>
+                                   <button class="py-2 px-4 bg-branco-bg text-verde-primario text-base rounded-xl shadow-xl">Média</button>
+                                   <button class="py-2 px-4 bg-branco-bg text-verde-primario text-base rounded-xl shadow-xl">Alta</button>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="py-6 border-b-2 border-cinza-card">
+                         <div class="legenda-filtros flex justify-between text-md text-preto font-medium cursor-pointer"><span><i class="fa-solid fa-location-dot mr-2"></i>Localização</span><span class="icone-seta"><i class="fa-solid fa-caret-down"></i></span></div>
+                         <div class="filtros hidden">
+                              <div class="mt-2 w-full flex flex-wrap gap-3">
+                                   <button class="py-2 px-4 bg-verde-primario text-white text-base rounded-xl shadow-xl">DF</button>
+                                   <button class="py-2 px-4 bg-branco-bg text-verde-primario text-base rounded-xl shadow-xl">Alto-Paraíso - GO</button>
+                                   <button class="py-2 px-4 bg-branco-bg text-verde-primario text-base rounded-xl shadow-xl">Cavalcante - GO</button>
+                                   <button class="py-2 px-4 bg-branco-bg text-verde-primario text-base rounded-xl shadow-xl">Pirenópolis - GO</button>
+                                   <button class="py-2 px-4 bg-branco-bg text-verde-primario text-base rounded-xl shadow-xl">Corumba - GO</button>
+                              </div>
+                         </div>
+                    </div>
+               </div>
           </aside>
           <div class="w-full h-full flex flex-column items-center p-8">
-               <div class="relative mt-2 w-3/4 bg-branco-bg flex justify-between items-center gap-x-8 h-10 md:h-12 rounded-lg pl-8 pr-3">
+               <div class="relative mt-2 w-full bg-branco-bg flex justify-between items-center gap-x-8 h-10 md:h-12 rounded-lg pl-8 pr-3">
                     <div class="inset-y-0 left-0 flex items-center">
                          <select class="cursor-pointer bg-branco-bg text-sm md:text-md text-verde-primario h-full py-2 pl-3 pr-8 rounded-l-lg leading-tight focus:outline-none">
                               <option value="Trilhas" class="cursor-pointer text-preto">Trilhas</option>
@@ -82,6 +129,24 @@
                </div>
           </div>
      </main>
+     <div class="fixed bottom-8 left-0 px-8 flex items-center gap-x-2">
+          <button id="btnAcessibilidade" class="bg-verde-primario text-white text-3xl font-bold h-14 w-14 rounded-full shadow-lg hover:bg-verde-escuro">
+               <i class="bi bi-universal-access-circle"></i>          
+          </button>
+          <div id="options" class="flex items-center pag-x-2 hidden h-14">
+               <button id="btnAumentarFonte" class="option-button bg-verde-claro text-white text-xl font-bold h-10 w-10 flex justify-center items-center rounded-full shadow-lg hover:bg-verde-escuro mr-2">
+                    <img src="/images/icone-aumentar.svg" alt="Botão de diminuir fonte" class="w-4 h-auto">
+                </button>
+                <button id="btnDiminuirFonte" class="option-button bg-verde-claro text-white text-xl font-bold h-10 w-10 flex justify-center items-center rounded-full shadow-lg hover:bg-verde-escuro">
+                    <img src="/images/icone-diminuir.svg" alt="Botão de diminuir fonte" class="w-4 h-auto">
+                </button>
+          </div>
+     </div>
+     <div class="fixed bottom-8 right-0 px-8 w-auto flex flex-col gap-y-2 items-end">
+          <button id="btnScroll" class="text-branco-bg text-2xl w-14 h-14 rounded-full bg-verde-claro flex justify-center items-center cursor-pointer transition-all hover:bg-verde-primario">
+               <i class="fa-solid fa-arrow-up"></i>
+          </button>
+     </div>
      <footer class="bg-verde-primario h-auto md:h-44 w-full flex justify-between items-center p-8">
           <div class="conteudo mx-auto w-full flex flex-col gap-y-6 justify-between items-center">
                <div class="text-verde-primario text-xl text-end flex gap-x-2">

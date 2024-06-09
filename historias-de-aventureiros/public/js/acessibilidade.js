@@ -1,8 +1,8 @@
 $(document).ready(function() {
      const btnAumentarFonte = $("#btnAumentarFonte");
      const btnDiminuirFonte = $("#btnDiminuirFonte");
-     const incrementarValor = 1.1;
-     const decrementarValor = 0.9;
+     const INCREMENTARVALOR = 1.1;
+     const DECREMENTARVALOR = 0.9;
      let tentativaClicks = 0;
 
      btnAumentarFonte.click(function() {
@@ -29,7 +29,7 @@ $(document).ready(function() {
                $("h1, h2, h3, h4, h5, p, span, button, li, a").each(function() {
                     const tamanhoAtual = parseFloat($(this).css("font-size"));
                     // console.log(tamanhoAtual);
-                    const novoTamanhoFonte = tamanhoAtual * incrementarValor;
+                    const novoTamanhoFonte = tamanhoAtual * INCREMENTARVALOR;
                     $(this).css("font-size", novoTamanhoFonte + "px");
                });
           }   
@@ -55,7 +55,7 @@ $(document).ready(function() {
 
                $("h1, h2, h3, h4, h5, p, span, button, li, a").each(function() {
                     const tamanhoAtual = parseFloat($(this).css("font-size"));
-                    const novoTamanhoFonte = tamanhoAtual * decrementarValor;
+                    const novoTamanhoFonte = tamanhoAtual * DECREMENTARVALOR;
                     $(this).css("font-size", novoTamanhoFonte + "px");
                });
           }
