@@ -108,7 +108,7 @@
                <div class="conteudo mx-auto flex flex-col justify-center items-center">
                      <h2 class="text-preto text-xl md:text-2xl text-center font-bold">Escolhas preferidas dos nossos usuários</h2>
                      <div class="mt-4 flex flex-col lg:flex-row lg:justify-center items-center gap-y-6 lg:gap-x-4">
-                         <div class="w-full h-60 lg:w-72 xl:w-96 lg:h-96 bg-branco-bg rounded-xl p-4 flex gap-x-4 lg:flex-col items-center">
+                         <div class="w-full h-60 lg:w-72 xl:w-96 lg:h-96 bg-branco-bg rounded-xl p-4 flex gap-x-4 lg:flex-col items-center cursor-pointer">
                               <div style="background: url(/images/img-card.png) center no-repeat; background-size: cover;" class="w-full h-full rounded-xl px-4 py-2">
                                    <div class="w-full flex justify-between items-center text-sm">
                                         <span class="bg-preto py-1 px-2 rounded-xl text-branco-bg text-lg md:text-md">Trilha</span>
@@ -135,7 +135,7 @@
                                    </div>
                               </div>
                          </div>
-                         <div class="w-full h-60 lg:w-72 xl:w-96 lg:h-96 bg-branco-bg rounded-xl p-4 flex gap-x-4 lg:flex-col items-center">
+                         <div class="w-full h-60 lg:w-72 xl:w-96 lg:h-96 bg-branco-bg rounded-xl p-4 flex gap-x-4 lg:flex-col items-center cursor-pointer">
                               <div style="background: url(/images/img-card.png) center no-repeat; background-size: cover;" class="w-full h-full rounded-xl px-4 py-2">
                                    <div class="w-full flex justify-between items-center text-sm">
                                         <span class="bg-preto py-1 px-2 rounded-xl text-branco-bg text-lg md:text-md">Trilha</span>
@@ -162,7 +162,7 @@
                                    </div>
                               </div>
                          </div>
-                         <div class="w-full h-60 lg:w-72 xl:w-96 lg:h-96 bg-branco-bg rounded-xl p-4 flex gap-x-4 lg:flex-col items-center">
+                         <div class="w-full h-60 lg:w-72 xl:w-96 lg:h-96 bg-branco-bg rounded-xl p-4 flex gap-x-4 lg:flex-col items-center cursor-pointer">
                               <div style="background: url(/images/img-card.png) center no-repeat; background-size: cover;" class="w-full h-full rounded-xl px-4 py-2">
                                    <div class="w-full flex justify-between items-center text-sm">
                                         <span class="bg-preto py-1 px-2 rounded-xl text-branco-bg text-lg md:text-md">Trilha</span>
@@ -227,10 +227,10 @@
                <i class="bi bi-universal-access-circle"></i>          
           </button>
           <div id="options" class="flex items-center pag-x-2 hidden h-14">
-               <button class="option-button bg-verde-claro text-white text-xl font-bold h-10 w-10 flex justify-center items-center rounded-full shadow-lg hover:bg-verde-escuro mr-2">
+               <button id="btnAumentarFonte" class="option-button bg-verde-claro text-white text-xl font-bold h-10 w-10 flex justify-center items-center rounded-full shadow-lg hover:bg-verde-escuro mr-2">
                     <img src="/images/icone-aumentar.svg" alt="Botão de diminuir fonte" class="w-4 h-auto">
                 </button>
-                <button class="option-button bg-verde-claro text-white text-xl font-bold h-10 w-10 flex justify-center items-center rounded-full shadow-lg hover:bg-verde-escuro">
+                <button id="btnDiminuirFonte" class="option-button bg-verde-claro text-white text-xl font-bold h-10 w-10 flex justify-center items-center rounded-full shadow-lg hover:bg-verde-escuro">
                     <img src="/images/icone-diminuir.svg" alt="Botão de diminuir fonte" class="w-4 h-auto">
                 </button>
           </div>
@@ -270,6 +270,7 @@
      </footer>
 
      <script src="/js/componentes.js"></script>
+     <script src="/js/acessibilidade.js"></script>
 </body>
 
 </html>

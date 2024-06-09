@@ -15,4 +15,9 @@ router.get('/cadastro', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'views', 'cadastro.html'));
 });
 
+// Rota para a página de cadastro
+router.get('/pesquisa', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'views', 'pesquisa.html'));
+});
+
 module.exports = router;
