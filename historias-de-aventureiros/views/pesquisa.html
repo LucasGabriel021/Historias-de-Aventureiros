@@ -68,11 +68,34 @@
                <h2 class="text-lg text-preto font-bold">Filtros</h2>
                <div class="flex flex-col w-full">
                     <div class="py-6 border-b-2 border-cinza-card">
+                         <div class="legenda-filtros flex justify-between text-md text-preto font-medium cursor-pointer"><span><i class="fa-solid fa-mountain mr-2"></i>Categoria</span><span class="icone-seta"><i class="fa-solid fa-caret-down"></i></span></div>
+                         <div class="filtros hidden">
+                              <div class="mt-2 w-full flex flex-wrap gap-3">
+                                   <button class="py-2 px-4 bg-verde-primario text-white text-base rounded-xl shadow-xl">Trilha de Caminhada</button>
+                                   <button class="py-2 px-4 bg-branco-bg text-verde-primario text-base rounded-xl shadow-xl">Trilha de Bicicleta</button>
+                                   <button class="py-2 px-4 bg-branco-bg text-verde-primario text-base rounded-xl shadow-xl">Trilha de Corrida</button>
+                                   <button class="py-2 px-4 bg-branco-bg text-verde-primario text-base rounded-xl shadow-xl">Trilha de Passeio</button>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="py-6 border-b-2 border-cinza-card">
+                         <div class="legenda-filtros flex justify-between text-md text-preto font-medium cursor-pointer"><span><i class="fa-solid fa-location-dot mr-2"></i>Localização</span><span class="icone-seta"><i class="fa-solid fa-caret-down"></i></span></div>
+                         <div class="filtros hidden">
+                              <div class="mt-2 w-full flex flex-wrap gap-3">
+                                   <button class="py-2 px-4 bg-verde-primario text-white text-base rounded-xl shadow-xl">DF</button>
+                                   <button class="py-2 px-4 bg-branco-bg text-verde-primario text-base rounded-xl shadow-xl">Alto-Paraíso - GO</button>
+                                   <button class="py-2 px-4 bg-branco-bg text-verde-primario text-base rounded-xl shadow-xl">Cavalcante - GO</button>
+                                   <button class="py-2 px-4 bg-branco-bg text-verde-primario text-base rounded-xl shadow-xl">Pirenópolis - GO</button>
+                                   <button class="py-2 px-4 bg-branco-bg text-verde-primario text-base rounded-xl shadow-xl">Corumba - GO</button>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="py-6 border-b-2 border-cinza-card">
                          <div class="legenda-filtros flex justify-between text-md text-preto font-medium cursor-pointer"><span><i class="fa-solid fa-signal mr-2"></i>Dificuldade</span><span class="icone-seta"><i class="fa-solid fa-caret-down"></i></span></div>
                          <div class="filtros hidden">
                               <div class="mt-2 w-full flex flex-wrap gap-x-3">
                                    <button class="py-2 px-4 bg-verde-primario text-white text-base rounded-xl shadow-xl">Fácil</button>
-                                   <button class="py-2 px-4 bg-branco-bg text-verde-primario text-base rounded-xl shadow-xl">Médio</button>
+                                   <button class="py-2 px-4 bg-branco-bg text-verde-primario text-base rounded-xl shadow-xl">Moderado</button>
                                    <button class="py-2 px-4 bg-branco-bg text-verde-primario text-base rounded-xl shadow-xl">Difícil</button>
                               </div>
                          </div>
@@ -89,28 +112,6 @@
                               </div>
                          </div>
                     </div>
-                    <div class="py-6 border-b-2 border-cinza-card">
-                         <div class="legenda-filtros flex justify-between text-md text-preto font-medium cursor-pointer"><span><i class="fa-solid fa-mountain mr-2"></i>Elevação</span><span class="icone-seta"><i class="fa-solid fa-caret-down"></i></span></div>
-                         <div class="filtros hidden">
-                              <div class="mt-2 w-full flex flex-wrap gap-3">
-                                   <button class="py-2 px-4 bg-verde-primario text-white text-base rounded-xl shadow-xl">Baixa</button>
-                                   <button class="py-2 px-4 bg-branco-bg text-verde-primario text-base rounded-xl shadow-xl">Média</button>
-                                   <button class="py-2 px-4 bg-branco-bg text-verde-primario text-base rounded-xl shadow-xl">Alta</button>
-                              </div>
-                         </div>
-                    </div>
-                    <div class="py-6 border-b-2 border-cinza-card">
-                         <div class="legenda-filtros flex justify-between text-md text-preto font-medium cursor-pointer"><span><i class="fa-solid fa-location-dot mr-2"></i>Localização</span><span class="icone-seta"><i class="fa-solid fa-caret-down"></i></span></div>
-                         <div class="filtros hidden">
-                              <div class="mt-2 w-full flex flex-wrap gap-3">
-                                   <button class="py-2 px-4 bg-verde-primario text-white text-base rounded-xl shadow-xl">DF</button>
-                                   <button class="py-2 px-4 bg-branco-bg text-verde-primario text-base rounded-xl shadow-xl">Alto-Paraíso - GO</button>
-                                   <button class="py-2 px-4 bg-branco-bg text-verde-primario text-base rounded-xl shadow-xl">Cavalcante - GO</button>
-                                   <button class="py-2 px-4 bg-branco-bg text-verde-primario text-base rounded-xl shadow-xl">Pirenópolis - GO</button>
-                                   <button class="py-2 px-4 bg-branco-bg text-verde-primario text-base rounded-xl shadow-xl">Corumba - GO</button>
-                              </div>
-                         </div>
-                    </div>
                </div>
           </aside>
           <div class="w-full h-full flex flex-column items-center p-8">
@@ -119,7 +120,6 @@
                          <select class="cursor-pointer bg-branco-bg text-sm md:text-md text-verde-primario h-full py-2 pl-3 pr-8 rounded-l-lg leading-tight focus:outline-none">
                               <option value="Trilhas" class="cursor-pointer text-preto">Trilhas</option>
                               <option value="Eventos" class="cursor-pointer text-preto">Eventos</option>
-                              <option value="Eventos" class="cursor-pointer text-preto">Grupos</option>
                          </select>
                          </div>
                     <input type="text" id="buscaPrincipal" name="buscaPrincipal" autocomplete="off" placeholder="Chapada dos Veadeiros" class="border-l-2 px-4 w-full bg-branco-bg text-sm md:text-md h-full outline-0">

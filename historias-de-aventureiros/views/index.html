@@ -74,7 +74,6 @@
                               <select id="tipoPesquisa" name="tipoPesquisa" class="cursor-pointer bg-branco-bg text-sm md:text-md text-verde-primario h-full py-2 pl-3 pr-8 rounded-l-lg leading-tight focus:outline-none">
                                   <option value="Trilhas" class="cursor-pointer text-preto">Trilhas</option>
                                   <option value="Eventos" class="cursor-pointer text-preto">Eventos</option>
-                                  <option value="Grupos" class="cursor-pointer text-preto">Grupos</option>
                               </select>
                           </div>
                          <input type="text" id="buscaPrincipal" name="buscaPrincipal" autocomplete="off" placeholder="Chapada dos Veadeiros" class="border-l-2 px-4 w-full bg-branco-bg text-sm md:text-md h-full outline-0">
@@ -110,88 +109,31 @@
           </section>
           <section id="sectcionRecomendacoes" class="p-8">
                <div class="conteudo mx-auto flex flex-col justify-center items-center">
-                     <h2 class="text-preto text-xl md:text-2xl text-center font-bold">Escolhas preferidas dos nossos usuários</h2>
+                     <h2 class="text-preto text-xl md:text-2xl text-center font-bold">Escolhas os tipos de trilha que deseja fazer</h2>
                      <div class="mt-4 flex flex-col lg:flex-row lg:justify-center items-center gap-y-6 lg:gap-x-4">
-                         <div class="w-full h-60 lg:w-72 xl:w-96 lg:h-96 bg-branco-bg rounded-xl p-4 flex gap-x-4 lg:flex-col items-center cursor-pointer">
-                              <div style="background: url(/images/img-card.png) center no-repeat; background-size: cover;" class="w-full h-full rounded-xl px-4 py-2">
-                                   <div class="w-full flex justify-between items-center text-sm">
-                                        <span class="bg-preto py-1 px-2 rounded-xl text-branco-bg text-lg md:text-md">Trilha</span>
-                                        <div class="bg-preto py-1 px-2 rounded-xl text-branco-bg flex items-center gap-x-1 text-lg md:text-md">
-                                             <span>4.57</span>
-                                             <i class="fa-solid fa-star text-xs"></i>
-                                        </div>
-                                   </div>
-                              </div>
-                              <div class="mt-2">
-                                   <h3 class="text-md text-preto font-medium">Titulo</h3>
-                                   <p class="text-base text-preto text-justify font-normal mt-1">Lorem Ipsum é simplesmente um texto fictício da indústria de impressão e composição tipográfica. </p>
-                                   <div class="mt-2 bg-cinza-card rounded-md flex justify-between items-center px-3 py-2">
-                                        <div class="flex gap-x-2">
-                                             <img src="/images/img-profile.jpg" alt="Uusário" class="w-8 h-8 rounded-full">
-                                             <div>
-                                                  <h4 class="text-md text-preto font-medium">Fulano Ciclano</h4>
-                                                  <h5 class="text-xs text-preto">Postado no dia 19/05/2024</h5>
-                                             </div>
-                                        </div>
-                                        <div class="text-preto">
-                                             <i class="fa-regular fa-bookmark"></i>
-                                        </div>
-                                   </div>
-                              </div>
+                         <div class="cursor-pointer bg-white w-full p-3 shadow-lg transition-all hover:scale-105" id="trilhaCaminhada">
+                              <img src="/images/imgCat-Caminhada.png" alt="Trilha para caminhada" class="w-full h-40"/>
+                              <h4 class="text-lg font-bold text-center text-black mt-3">Trilha de caminhada</h4>
+                              <p class="text-sm font-normal text-center text-preto mt-1">É um fato estabelecido há muito tempo que um leitor se distrairá com o conteúdo legível de uma página ao observar seu layout.</p>
+                              <h5 class="text-center text-verde-primario mt-2 text-sm">Ver mais <span><i class="fa-solid fa-arrow-right-long"></i></span></h5>
                          </div>
-                         <div class="w-full h-60 lg:w-72 xl:w-96 lg:h-96 bg-branco-bg rounded-xl p-4 flex gap-x-4 lg:flex-col items-center cursor-pointer">
-                              <div style="background: url(/images/img-card.png) center no-repeat; background-size: cover;" class="w-full h-full rounded-xl px-4 py-2">
-                                   <div class="w-full flex justify-between items-center text-sm">
-                                        <span class="bg-preto py-1 px-2 rounded-xl text-branco-bg text-lg md:text-md">Trilha</span>
-                                        <div class="bg-preto py-1 px-2 rounded-xl text-branco-bg flex items-center gap-x-1 text-lg md:text-md">
-                                             <span>4.57</span>
-                                             <i class="fa-solid fa-star text-xs"></i>
-                                        </div>
-                                   </div>
-                              </div>
-                              <div class="mt-2">
-                                   <h3 class="text-md text-preto font-medium">Titulo</h3>
-                                   <p class="text-base text-preto text-justify font-normal mt-1">Lorem Ipsum é simplesmente um texto fictício da indústria de impressão e composição tipográfica. </p>
-                                   <div class="mt-2 bg-cinza-card rounded-md flex justify-between items-center px-3 py-2">
-                                        <div class="flex gap-x-2">
-                                             <img src="/images/img-profile.jpg" alt="Uusário" class="w-8 h-8 rounded-full">
-                                             <div>
-                                                  <h4 class="text-md text-preto font-medium">Fulano Ciclano</h4>
-                                                  <h5 class="text-xs text-preto">Postado no dia 19/05/2024</h5>
-                                             </div>
-                                        </div>
-                                        <div class="text-preto">
-                                             <i class="fa-regular fa-bookmark"></i>
-                                        </div>
-                                   </div>
-                              </div>
+                         <div class="cursor-pointer bg-white w-full p-3 shadow-lg transition-all hover:scale-105" id="trilhaBicicleta">
+                              <img src="/images/imgCat-Ciclista.png" alt="Trilha para ciclistas" class="w-full h-40"/>
+                              <h4 class="text-lg font-bold text-center text-black mt-3">Trilha de bicicleta</h4>
+                              <p class="text-sm font-normal text-center text-preto mt-1">É um fato estabelecido há muito tempo que um leitor se distrairá com o conteúdo legível de uma página ao observar seu layout.</p>
+                              <h5 class="text-center text-verde-primario mt-2 text-sm">Ver mais <span><i class="fa-solid fa-arrow-right-long"></i></span></h5>
                          </div>
-                         <div class="w-full h-60 lg:w-72 xl:w-96 lg:h-96 bg-branco-bg rounded-xl p-4 flex gap-x-4 lg:flex-col items-center cursor-pointer">
-                              <div style="background: url(/images/img-card.png) center no-repeat; background-size: cover;" class="w-full h-full rounded-xl px-4 py-2">
-                                   <div class="w-full flex justify-between items-center text-sm">
-                                        <span class="bg-preto py-1 px-2 rounded-xl text-branco-bg text-lg md:text-md">Trilha</span>
-                                        <div class="bg-preto py-1 px-2 rounded-xl text-branco-bg flex items-center gap-x-1 text-lg md:text-md">
-                                             <span>4.57</span>
-                                             <i class="fa-solid fa-star text-xs"></i>
-                                        </div>
-                                   </div>
-                              </div>
-                              <div class="mt-2">
-                                   <h3 class="text-md text-preto font-medium">Titulo</h3>
-                                   <p class="text-base text-preto text-justify font-normal mt-1">Lorem Ipsum é simplesmente um texto fictício da indústria de impressão e composição tipográfica. </p>
-                                   <div class="mt-2 bg-cinza-card rounded-md flex justify-between items-center px-3 py-2">
-                                        <div class="flex gap-x-2">
-                                             <img src="/images/img-profile.jpg" alt="Uusário" class="w-8 h-8 rounded-full">
-                                             <div>
-                                                  <h4 class="text-md text-preto font-medium">Fulano Ciclano</h4>
-                                                  <h5 class="text-xs text-preto">Postado no dia 19/05/2024</h5>
-                                             </div>
-                                        </div>
-                                        <div class="text-preto">
-                                             <i class="fa-regular fa-bookmark"></i>
-                                        </div>
-                                   </div>
-                              </div>
+                         <div class="cursor-pointer bg-white w-full p-3 shadow-lg transition-all hover:scale-105" id="trilhaCorrida">
+                              <img src="/images/imgCat-Corrida.png" alt="Trilha para corrida" class="w-full h-40"/>
+                              <h4 class="text-lg font-bold text-center text-black mt-3">Trilha de corrida</h4>
+                              <p class="text-sm font-normal text-center text-preto mt-1">É um fato estabelecido há muito tempo que um leitor se distrairá com o conteúdo legível de uma página ao observar seu layout.</p>
+                              <h5 class="text-center text-verde-primario mt-2 text-sm">Ver mais <span><i class="fa-solid fa-arrow-right-long"></i></span></h5>
+                         </div>
+                         <div class="cursor-pointer bg-white w-full p-3 shadow-lg transition-all hover:scale-105" id="trilhaPasseio">
+                              <img src="/images/imgCat-Passeio.png" alt="Trilha para passeio com a família" class="w-full h-40"/>
+                              <h4 class="text-lg font-bold text-center text-black mt-3">Trilha de passeio</h4>
+                              <p class="text-sm font-normal text-center text-preto mt-1">É um fato estabelecido há muito tempo que um leitor se distrairá com o conteúdo legível de uma página ao observar seu layout.</p>
+                              <h5 class="text-center text-verde-primario mt-2 text-sm">Ver mais <span><i class="fa-solid fa-arrow-right-long"></i></span></h5>
                          </div>
                      </div>
                      <button class="mt-4 px-4 py-2 bg-verde-primario text-lg text-branco-bg rounded-xl transition-all hover:bg-verde-secundario hover:text-verde-primario w-fit">Veja mais <i class="fa-solid fa-arrow-right"></i></button>
