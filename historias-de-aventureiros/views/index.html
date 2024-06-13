@@ -38,12 +38,27 @@
                           "verde-claro": "#8aec60",
                           "branco-bg": "#F1F1F1",
                           "preto": "#3A3C39",
-                          "cinza-card": "#D7D7D7"
+                          "cinza-card": "#D7D7D7",
+                          // Cores para tipos protanopia
+                          "verde-primario-protanopia": "#bda832",
+                          "verde-secundario-protanopia": "#fdeb9c",
+                          "verde-claro-protanopia": "#e6d16b",
+                          "verde-escuro-protanopia": "#4b420c"
                       }
                   }
               }
           }
       </script>
+      <style>
+          @tailwind base;
+          @tailwind components;
+          @tailwind utilities;
+  
+          /* Adicionando filtro personalizado para protanopia */
+          .filter-protanopia {
+              filter: url("#protanopia");
+          }
+      </style>
       
      <!-- CDN Fontawesome -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -53,6 +68,15 @@
 </head>
 
 <body class="relative">
+     <!-- Definição do filtro SVG -->
+    <svg width="0" height="0">
+          <filter id="protanopia">
+          <feColorMatrix type="matrix" values="0.567, 0.433, 0, 0, 0
+                                                  0.558, 0.442, 0, 0, 0
+                                                  0, 0.242, 0.758, 0, 0
+                                                  0, 0, 0, 1, 0"/>
+          </filter>
+     </svg>
      <header id="paginaIndex">
           <div class="conteudo mx-auto">
                <div class="w-full flex justify-between items-center p-8">
@@ -143,21 +167,21 @@
                <div class="conteudo mx-auto">
                     <h2 class="text-preto text-xl md:text-2xl text-center font-bold">Escolhas preferidas dos nossos usuários</h2>
                     <div class="mt-2 flex flex-col lg:flex-row lg:justify-center items-center gap-y-6 lg:gap-x-4">
-                         <div style="background: url(/images/img-rec.png) center no-repeat; background-size: cover;" class="flex flex-column justify-between mt-2 rounded-md p-8 w-full lg:w-72 xl:w-96 h-80">
+                         <div style="background: url(/images/img-rec.png) center no-repeat; background-size: cover;" class="flex flex-column justify-between mt-2 rounded-md p-8 w-full lg:w-72 xl:w-96 h-80 bg-imagem">
                               <div>
                                    <h2 class="text-branco-bg text-xl">Descubra trilhas na<br>Chapada dos Veadeiros</h2>
                                    <p class="mt-2 text-branco-bg text-sm">Explore as belas paisagens que só a Chapada dos Veadeiros pode oferecer.</p>
                               </div>
                               <button class="px-6 py-2 bg-verde-primario text-branco-bg text-md font-medium rounded-3xl hover:bg-verde-secundario hover:text-verde-escuro transition-all flex items-center gap-x-2 w-full md:w-fit flex justify-center md:block">Veja mais <i class="fa-solid fa-arrow-right"></i></button>
                          </div>
-                         <div style="background: url(/images/img-rec2.png) center no-repeat; background-size: cover;" class="flex flex-column justify-between mt-2 rounded-md p-8 w-full lg:w-72 xl:w-96 h-80">
+                         <div style="background: url(/images/img-rec2.png) center no-repeat; background-size: cover;" class="flex flex-column justify-between mt-2 rounded-md p-8 w-full lg:w-72 xl:w-96 h-80 bg-imagem">
                               <div>
                                    <h2 class="text-branco-bg text-xl">Descubra trilhas em<br>Cavalcante</h2>
                                    <p class="mt-2 text-branco-bg text-sm">Embarque em novas aventuras por este lugar maravilhoso.</p>
                               </div>
                               <button class="px-6 py-2 bg-verde-primario text-branco-bg text-md font-medium rounded-3xl hover:bg-verde-secundario hover:text-verde-escuro transition-all flex items-center gap-x-2 w-full md:w-fit flex justify-center md:block">Veja mais <i class="fa-solid fa-arrow-right"></i></button>
                          </div>
-                         <div style="background: url(/images/img-rec3.png) center no-repeat; background-size: cover;" class="flex flex-column justify-between mt-2 rounded-md p-8 w-full lg:w-72 xl:w-96 h-80">
+                         <div style="background: url(/images/img-rec3.png) center no-repeat; background-size: cover;" class="flex flex-column justify-between mt-2 rounded-md p-8 w-full lg:w-72 xl:w-96 h-80 bg-imagem">
                               <div>
                                    <h2 class="text-branco-bg text-xl">Descubra trilhas no<br>Distrito Federal</h2>
                                    <p class="mt-2 text-branco-bg text-sm">Saia da rotina e repire areas mais frescos longe da civilização humana.</p>
@@ -179,10 +203,15 @@
                 <button id="btnDiminuirFonte" title="Diminuir fonte do sistema" class="option-button bg-verde-claro text-white text-xl font-bold h-10 w-10 flex justify-center items-center rounded-full shadow-lg hover:bg-verde-escuro mr-2">
                     <img src="/images/icone-diminuir.svg" alt="Botão de diminuir fonte" class="w-4 h-auto">
                 </button>
-                <button id="btnDiminuirFonte" title="Alterar para o modo daltonimso" class="option-button bg-verde-claro font-bold h-10 w-10 flex justify-center items-center rounded-full shadow-lg hover:bg-verde-escuro mr-2">
-                    <span class="text-md text-branco-bg"><i class="fa-solid fa-eye"></i></span>
+                <button title="Alterar cores do sistema" class="option-button bg-verde-claro font-bold h-10 w-fit px-2 flex justify-center items-center rounded-full shadow-lg hover:bg-verde-escuro mr-2">
+                    <select name="selecCor" id="selecCor" class="bg-transparent text-white font-medium">
+                         <option value="Normal" class="text-preto">Normal</option>
+                         <option value="Protanopia" class="text-preto">Protanopia</option>
+                         <option value="Deuteranopia" class="text-preto">Deuteranopia</option>
+                         <option value="Tritanopia" class="text-preto">Tritanopia</option>
+                    </select>
                 </button>
-                <button id="selecIdioma" title="Alterar idioma do sistema" class="option-button bg-verde-claro font-bold h-10 w-fit px-2 flex justify-center items-center rounded-full shadow-lg hover:bg-verde-escuro">
+                <button title="Alterar idioma do sistema" class="option-button bg-verde-claro font-bold h-10 w-fit px-2 flex justify-center items-center rounded-full shadow-lg hover:bg-verde-escuro">
                     <select name="selecIdioma" id="selectIdioma" class="bg-transparent text-white font-medium">
                          <option value="pt" class="text-preto">Português</option>
                          <option value="en" class="text-preto">English</option>
@@ -192,7 +221,7 @@
           </div>
      </div>
      <div class="fixed bottom-8 right-0 px-8 w-auto flex flex-col gap-y-2 items-end">
-          <button id="btnScroll" class="text-branco-bg text-2xl w-14 h-14 rounded-full bg-verde-claro flex justify-center items-center cursor-pointer transition-all hover:bg-verde-primario">
+          <button id="btnScroll" class="text-branco-bg text-2xl w-14 h-14 rounded-full bg-verde-claro flex justify-center items-center cursor-pointer transition-all hover:bg-verde-escuro">
                <i class="fa-solid fa-arrow-up"></i>
           </button>
      </div>
